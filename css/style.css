@@ -1,14 +1,16 @@
 #index {
     display: grid;
-    width: 100%;
+    width: 99vw;
     height: 200%;
+    margin: 0%;
+    background-color: white;
     grid-template-columns: auto;
     grid-template-rows: 5% 15% 70% 10%;
     grid-template-areas:
         'SA'
         'SB'
         'SC'
-        'SD';
+        '.';
 }
 
 #Section-A {
@@ -54,16 +56,73 @@
 
 #Section-B {
     grid-area: SB;
-    background-color: navy;
+    border-style: dashed;
+    border-color: red;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+        'B1 B2 B3'
+        'B4 B4 B4';
+}
+#Section-B1 {
+    grid-area: B1;
+    background-color: lightpink;
+    opacity: 100%;
+
+}
+#Section-B2 {
+    grid-area: B2;
+    background-color: rebeccapurple;
+}
+#Section-B3 {
+    grid-area: B3;
+    background-color: pink;
+}
+#Section-B4 {
+    grid-area: B4;
+    background-color: red;
 }
 
+
 #Section-C {
+    border-style: dashed;
+    border-color: black;
     grid-area: SC;
-    background-color: blue;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 47.5% 5% 47.5%;
+    grid-template-areas:
+        'C3 C1 C4'
+        'C3 . C4'
+        'C3 C2 C4';
+
+}
+#Section-C1 {
+    grid-area: C1;
+    background-color: rebeccapurple;
+    opacity: 100%;
+
+}
+#Section-C2 {
+    grid-area: C2;
+    background-color: red;
+}
+#Section-C3 {
+    grid-area: C3;
+    background-color: lightpink;
+}
+#Section-C4 {
+    grid-area: C4;
+    background-color: pink;
 }
 
 #Section-D {
-    grid-area: SD;
-    background-color: blueviolet;
-
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    width: 80%;
+    height: 20%;
+    border: 3px solid blueviolet;
 }

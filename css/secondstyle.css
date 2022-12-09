@@ -1,0 +1,59 @@
+#index {
+    display: grid;
+    width: 99vw;
+    height: 200%;
+    margin: 0%;
+    background-color: white;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+        'SA'
+        'SB'
+        '.';
+}
+
+#Section-A {
+    grid-area: SA;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+#Section-A1 {
+    position: relative;
+    display: inline-block;
+}
+
+#Section-B {
+    border-style: dashed;
+    border-color: black;
+    grid-area: SB;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas:
+        'B2 B1 B3';
+
+}
+#Section-B1 {
+    grid-area: B1;
+    background-color: rebeccapurple;
+    opacity: 100%;
+
+}
+#Section-B2 {
+    grid-area: B2;
+}
+#Section-B3 {
+    grid-area: B3;
+}
+
+
+#Section-D {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    width: 80%;
+    height: 20%;
+    border: 3px solid blueviolet;
+}
